@@ -1,0 +1,8 @@
+{
+  "name": "drawdb-local",
+  "version": "1.0.0",
+  "description": "Flujos de trabajo con DrawDB autoalojado en Docker: import/export, copias y validacion sin cloud ni MCP supuesto.",
+  "author": {
+    "name": "Homelab personal"
+  }
+}

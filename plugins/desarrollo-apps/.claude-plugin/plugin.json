@@ -1,0 +1,9 @@
+{
+  "name": "desarrollo-apps",
+  "version": "1.0.0",
+  "description": "Desarrollo de aplicaciones, Prisma y PostgreSQL",
+  "author": {
+    "name": "Homelab personal"
+  },
+  "skills": "./skills/"
+}

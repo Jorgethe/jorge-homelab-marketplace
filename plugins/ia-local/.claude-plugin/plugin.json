@@ -1,0 +1,9 @@
+{
+  "name": "ia-local",
+  "version": "1.0.0",
+  "description": "IA local: Ollama, GPU, OmniRoute, FCC y herramientas",
+  "author": {
+    "name": "Homelab personal"
+  },
+  "skills": "./skills/"
+}

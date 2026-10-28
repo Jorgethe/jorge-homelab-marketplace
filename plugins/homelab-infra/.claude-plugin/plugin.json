@@ -1,0 +1,9 @@
+{
+  "name": "homelab-infra",
+  "version": "1.0.0",
+  "description": "Infraestructura: Proxmox, OPNsense, TrueNAS y Docker",
+  "author": {
+    "name": "Homelab personal"
+  },
+  "skills": "./skills/"
+}

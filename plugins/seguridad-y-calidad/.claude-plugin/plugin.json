@@ -1,0 +1,9 @@
+{
+  "name": "seguridad-y-calidad",
+  "version": "1.0.0",
+  "description": "Seguridad y fiabilidad de agentes para el homelab",
+  "author": {
+    "name": "Homelab personal"
+  },
+  "skills": "./skills/"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "drawdb-supabase",
+  "version": "1.2.0",
+  "description": "Diseno e importacion de esquemas PostgreSQL/Supabase en DrawDB Docker local, sin MCP cloud.",
+  "author": {
+    "name": "Homelab personal"
+  }
+}

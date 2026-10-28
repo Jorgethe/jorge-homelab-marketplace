@@ -1,0 +1,98 @@
+{
+  "name": "jorge-homelab-marketplace",
+  "description": "Marketplace personal v4: homelab, IA local, memoria y DrawDB local (edición OSS y fork MCP opcional, sin cloud).",
+  "owner": {
+    "name": "Homelab personal"
+  },
+  "plugins": [
+    {
+      "name": "homelab-infra",
+      "source": "./plugins/homelab-infra",
+      "description": "Infraestructura: Proxmox, OPNsense, TrueNAS y Docker"
+    },
+    {
+      "name": "ia-local",
+      "source": "./plugins/ia-local",
+      "description": "IA local: Ollama, GPU, OmniRoute, FCC y herramientas"
+    },
+    {
+      "name": "homelab-documentacion",
+      "source": "./plugins/homelab-documentacion",
+      "description": "Documentación estructurada del homelab"
+    },
+    {
+      "name": "desarrollo-apps",
+      "source": "./plugins/desarrollo-apps",
+      "description": "Desarrollo de aplicaciones, Prisma y PostgreSQL"
+    },
+    {
+      "name": "seguridad-y-calidad",
+      "source": "./plugins/seguridad-y-calidad",
+      "description": "Seguridad y fiabilidad de agentes para el homelab"
+    },
+    {
+      "name": "docker-skills",
+      "source": {
+        "source": "github",
+        "repo": "docker/skills"
+      },
+      "description": "Skills oficiales Docker: Compose, Dockerfiles y guardrails. Puede registrar Docker Docs MCP; revisar antes de activar."
+    },
+    {
+      "name": "superpowers",
+      "source": {
+        "source": "github",
+        "repo": "obra/superpowers"
+      },
+      "description": "Depuracion sistematica, verificacion, TDD y flujos de trabajo."
+    },
+    {
+      "name": "fullstack-dev-skills",
+      "source": {
+        "source": "github",
+        "repo": "Jeffallan/claude-skills"
+      },
+      "description": "Pack opcional amplio para desarrollo Next.js, Python y backend; mayor volumen de skills."
+    },
+    {
+      "name": "memoria-homelab",
+      "source": "./plugins/memoria-homelab",
+      "description": "Registro Markdown local de decisiones y continuidad de proyectos. No activa memoria automática."
+    },
+    {
+      "name": "drawdb-supabase",
+      "source": "./plugins/drawdb-supabase",
+      "description": "Diseño ERD e importación de metadatos PostgreSQL/Supabase hacia DrawDB en Docker local; sin sincronización implícita."
+    },
+    {
+      "name": "drawdb-local",
+      "source": "./plugins/drawdb-local",
+      "description": "DrawDB autoalojado: importar/exportar esquemas, respaldo y diagnóstico local. No inicia MCP ni servicios cloud."
+    },
+    {
+      "name": "drawdb-mcp-local",
+      "source": "./plugins/drawdb-mcp-local",
+      "description": "Opcional: guía de despliegue del fork anatoly-lab/drawdb-mcp junto al DrawDB actual y skills MCP de diseño/backup. No instala el servicio ni configura el conector automáticamente."
+    },
+    {
+      "name": "claude-mem",
+      "source": {
+        "source": "git-subdir",
+        "url": "thedotmack/claude-mem",
+        "path": "plugin",
+        "ref": "main"
+      },
+      "description": "OPCIONAL Claude Code: memoria persistente por hooks; exige instalar/configurar worker y revisar privacidad/costes."
+    },
+    {
+      "name": "claude-mem-cowork",
+      "source": {
+        "source": "git-subdir",
+        "url": "thedotmack/claude-mem",
+        "path": "cowork",
+        "ref": "main"
+      },
+      "description": "OPCIONAL Cowork: contexto entre sesiones con envío de fragmentos a cmem.ai; requiere cuenta/configuración y puede tener coste."
+    }
+  ]
+}

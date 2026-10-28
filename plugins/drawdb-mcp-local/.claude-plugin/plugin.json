@@ -1,0 +1,9 @@
+{
+  "name": "drawdb-mcp-local",
+  "version": "1.0.0",
+  "description": "Skills para controlar el fork autoalojado anatoly-lab/drawdb-mcp mediante herramientas MCP cuando estén conectadas. Instalación del MCP separada, no sustituye DrawDB original.",
+  "author": {
+    "name": "Homelab personal"
+  },
+  "homepage": "https://github.com/anatoly-lab/drawdb-mcp"
+}
