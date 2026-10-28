@@ -1,0 +1,17 @@
+# Ejemplo OPCIONAL: no sustituye tu DrawDB actual.
+# Los puertos por defecto quedan SOLO en loopback del host Docker.
+# Si Claude Desktop está en otro equipo, vincula una IP privada concreta del host Docker
+# mediante DRAWDB_MCP_BIND_IP y restringe acceso de red al PC con OPNsense/firewall.
+# Verifica que 8088 y 3100 están libres antes de arrancar.
+services:
+  drawdb-mcp-lab:
+    image: ghcr.io/anatoly-lab/drawdb-mcp:latest
+    container_name: drawdb-mcp-lab
+    ports:
+      - "${DRAWDB_MCP_BIND_IP:-127.0.0.1}:${DRAWDB_MCP_GUI_PORT:-8088}:80"
+      - "${DRAWDB_MCP_BIND_IP:-127.0.0.1}:${DRAWDB_MCP_HTTP_PORT:-3100}:3000"
+    environment:
+      NODE_ENV: production
+    restart: unless-stopped
+# No volumes inventados: el backend actual guarda estado en memoria.
+# EXPORTA el diagrama JSON antes de parar o actualizar este contenedor.
